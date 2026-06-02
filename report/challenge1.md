@@ -12,17 +12,15 @@ I started by testing whether the login/input field was vulnerable to SQL injecti
 
 **Payload used:**
 
-```
 1' OR '1'='1
-```
+
 
 This payload successfully bypassed authentication logic and returned a list of users from the database.
 
----
 
 **Screenshot 1: User Enumeration Result**
 
-screenshots/challenge1/01-sql-injection-user-list.png
+![User Enumeration](../screenshots/challenge1/01-sql-injection-user-list.png)
 
 ---
 
@@ -48,7 +46,7 @@ This executed successfully and confirmed that the query uses two columns.
 
  **Screenshot 2: UNION SELECT Successful Execution**
 
-screenshots/challenge1/02-union-select-column-test.png
+![UNION SELECT Column Test](../screenshots/challenge1/02-union-select-column-test.png)
 
 ---
 
@@ -58,21 +56,19 @@ After confirming the correct column structure, I extracted usernames and passwor
 
 **Payload used:**
 
-```
 1' UNION SELECT user,password FROM users#
-```
+
 
 This returned multiple users, including Gordon Brown, along with their password hashes.
 
----
 
- **Screenshot 3: Extracted Usernames and Password Hashes**
 
-```
-screenshots/challenge1/03-sql-injection-user-password-hashes.png
-```
+![User Credentials Extracted](../screenshots/challenge1/03-sql-injection-user-password-hashes.png)
 
----
+
+
+
+
 
 ### Step 4: Password Cracking
 
@@ -80,9 +76,9 @@ I identified the extracted hash as MD5 and used an online cracking tool (CrackSt
 
 **Hash:**
 
-```
+
 e99a18c428cb38d5f260853678922e03
-```
+
 
 **Recovered password:**
 
@@ -94,9 +90,8 @@ abc123
 
  **Screenshot 4: Password Cracked (CrackStation Result)**
 
-```
-screenshots/challenge1/04-md5-password-cracked-abc123.png
-```
+ 
+![Password Cracked (MD5)](../screenshots/challenge1/04-md5-password-cracked-abc123.png)
 
 ---
 
@@ -120,9 +115,7 @@ cat hkxisx.txt
 
  **Screenshot 5: SSH Login and Flag Retrieval**
 
-```
-screenshots/challenge1/05-ssh-login-and-challenge1-flag-retrieval.png
-```
+![SSH Login and Flag Retrieval](../screenshots/challenge1/05-ssh-login-and-challenge1-flag-retrieval.png)
 
 ---
 
