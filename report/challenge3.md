@@ -18,7 +18,7 @@ The scan revealed that the host **10.6.6.23** had both ports open, indicating ac
 
 ### Screenshot 1: SMB Port Scan Results
 
-![SMB Scan Results](screenshots/challenge3/step1_smb_scan.png)
+![SMB Scan Results](../screenshots/challenge3/step1_smb_scan.png)
 
 ---
 
@@ -41,7 +41,7 @@ I attempted anonymous access to each share to verify permissions.
 
 ### Screenshot 2: SMB Share Enumeration
 
-![SMB Shares](screenshots/challenge3/step2_share_enum.png)
+![SMB Shares](../screenshots/challenge3/step2_share_enum.png)
 
 ---
 
@@ -53,7 +53,7 @@ I began with the `print$` share because it contained multiple subdirectories, ma
 
 ### Screenshot 3: Exploration of print$ Share
 
-![Share Exploration](screenshots/challenge3/step3_exploration.png)
+![Share Exploration](../screenshots/challenge3/step3_exploration.png)
 
 
 
@@ -67,7 +67,7 @@ I downloaded the file using `get` command and opened it locally, revealing the f
 
 ### Screenshot 4: File Discovery and Flag
 
-![Flag Found](screenshots/challenge3/step4_flag.png)
+![Flag Found](../screenshots/challenge3/step4_flag.png)
 
 ---
 
