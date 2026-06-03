@@ -18,7 +18,7 @@ The scan revealed that the host **10.6.6.23** had both ports open, indicating ac
 
 ### Screenshot 1: SMB Port Scan Results
 
-![SMB Scan Results](screenshots/challenge3/step1_smb_scan.png)
+![Description](screenshots/challenge3/step1_smb_scan.png)
 
 ---
 
