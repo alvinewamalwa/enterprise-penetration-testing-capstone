@@ -1,10 +1,9 @@
-# Network Analysis Lab
+### Cisco Penetration Testing Challenge
 
 ## Overview
+This repository documents how I conducted a complete penetration test starting with reconnaissance and then launching exploits against vulnerabilities that I had discovered. Finally, I proposed remediation for the exploits.
 
-This repository contains a structured set of network and security analysis exercises conducted in a controlled lab environment simulating a real-world assessment scenario.
-
-The objective of this project was to identify vulnerabilities, analyze network traffic, enumerate exposed services, and demonstrate how misconfigurations can lead to sensitive data exposure across networked systems.
+This exercise is in the form of a cybersecurity capture the flag exercise. I used my ethical hacking skills to locate files that contain flag values. And then reported the flag values that I had found as part of the exercise.
 
 ---
 
@@ -32,7 +31,7 @@ The analysis covered:
 
 ## Repository Structure
 
-All detailed findings are documented inside the `reports/` directory.
+All detailed findings are documented inside the `reports/` directory. The reports include all the vulnerabilities discovered, successful exploits, and remediation steps to protect vulnerable systems.
 
 Each challenge is presented as a separate report containing:
 
